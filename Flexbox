@@ -1,3 +1,38 @@
 I'll change it after learning today
 
 Day 1:
+1. width: max-content, min-content.
+2. [display:flex,(block,inline,inline-block,none)]
+ - inline element width is it's content width.
+ - [display:flex] makes it's all parent element [display:block] 
+ - block display covers full width.
+ - flexbox want's to make all element stay in one line. 
+ - flexbox elements called flex items. 
+ - inline block element don't show given width-height but in flexbox when they become flex item, they can show w/h.
+ - We can give H/W in display block. Flex-item works like display box.also padding , margin.
+ - Direct child of parent tag become flex item. Grand child can't be.
+ - If browser don't get enough space than it shrink all of it's flex-item with equal size.
+ - if we don't give width-height[base size] than flex item will take space according to content size.
+ - shrink will happen until [min-width] min content[text] size reach than it will stop shrinking. But other flex-item will continue shrinking.
+ 
+ 
+Property:
+1. [flex-shrink:0] will stop the content shrinking.Works on flex-item only.
+2. [flex-grow:1,2,0] etc will divide empty space to value multiple . default is 0.Distributes availavle space.
+3. Parent{ justify-content:center } will center all flex-item content.[:space-between] provide space between flex item.  
+4. [align-item:stretch] this default prop says to flex-item to cover the parent's height. width will be content width.[:flex-start/end, center] will eliminate parent height and will take content height.
+5. [flex-direction:row,column,-reverse] for setting direction of flex items. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Extra:
+ 1.[ *{ box-sizing: border-box}, body{margin:0;} ] it's univarsal for better coding.
+ 2. Learn Box-Model.
+ 3. Learn Dev-Tool.
+ 4. flexboxfoggy.com for practicing with fun game.
